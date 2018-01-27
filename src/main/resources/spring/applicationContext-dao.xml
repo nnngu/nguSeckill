@@ -42,7 +42,7 @@
         <!--注入sqlSessionFactory,请注意不要使用sqlSessionFactoryBean，否则会出现注入异常-->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <!--给出要扫描的mapper接口-->
-        <property name="basePackage" value="com.nnngu.dao"/>
+        <property name="basePackage" value="com.nnngu.dao" />
     </bean>
 
     <!--注入redisDao-->
