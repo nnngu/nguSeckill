@@ -1,7 +1,7 @@
 package com.nnngu.exception;
 
 /**
- *  秒杀基础异常
+ *  秒杀基础的异常
  * Created by nnngu
  */
 public class SeckillException extends RuntimeException {
