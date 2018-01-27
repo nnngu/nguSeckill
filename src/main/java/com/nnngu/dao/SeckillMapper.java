@@ -38,5 +38,5 @@ public interface SeckillMapper {
      *  使用储存过程执行秒杀
      * @param paramMap
      */
-    void killByProcedure(Map<String,Object> paramMap);
+//    void killByProcedure(Map<String,Object> paramMap);
 }
