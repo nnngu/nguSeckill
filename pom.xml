@@ -73,6 +73,7 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
         <!--spring默认的json转换-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -129,8 +130,5 @@
             <version>4.2.7.RELEASE</version>
         </dependency>
     </dependencies>
-    <build>
-        <finalName>seckill</finalName>
-    </build>
 
 </project>
