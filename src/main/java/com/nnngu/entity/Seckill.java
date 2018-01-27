@@ -84,7 +84,7 @@ public class Seckill implements Serializable {
 
     @Override
     public String toString() {
-        return "com.suny.entity.Seckill{" +
+        return "com.nnngu.entity.Seckill{" +
                 "主键ID=" + seckillId +
                 ", 秒杀商品='" + name + '\'' +
                 ", 编号=" + number +

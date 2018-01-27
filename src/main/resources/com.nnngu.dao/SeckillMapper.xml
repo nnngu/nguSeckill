@@ -1,8 +1,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.suny.dao.SeckillMapper">
-    <resultMap id="BaseResultMap" type="com.suny.entity.Seckill">
+<mapper namespace="com.nnngu.dao.SeckillMapper">
+    <resultMap id="BaseResultMap" type="com.nnngu.entity.Seckill">
         <id property="seckillId" column="seckill_id" javaType="Long" jdbcType="BIGINT"/>
         <result property="name" column="name" javaType="String" jdbcType="VARCHAR"/>
         <result property="number" column="number" javaType="Integer" jdbcType="VARCHAR"/>
@@ -21,7 +21,7 @@
         AND number > 0
     </update>
 
-    <select id="queryById" resultType="com.suny.entity.Seckill">
+    <select id="queryById" resultType="com.nnngu.entity.Seckill">
         SELECT *
         FROM seckill AS s
         WHERE s.seckill_id = #{seckillId}

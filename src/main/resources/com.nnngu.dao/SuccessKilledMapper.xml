@@ -1,14 +1,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.suny.dao.SuccessKilledMapper">
+<mapper namespace="com.nnngu.dao.SuccessKilledMapper">
     <!--添加主键冲突时忽略错误返回0-->
     <insert id="insertSuccessKilled">
         INSERT IGNORE INTO success_killed (seckill_id, user_phone, state)
         VALUES (#{seckillId}, #{userPhone}, 0)
     </insert>
     <!--根据seckillId查询SuccessKilled对象，并携带Seckill对象，告诉mybatis把映射结果映射到SuccessKill属性同时映射到Seckill属性-->
-    <select id="queryByIdWithSeckill" resultType="com.suny.entity.SuccessKilled">
+    <select id="queryByIdWithSeckill" resultType="com.nnngu.entity.SuccessKilled">
         SELECT
         sk.seckill_id,
         sk.user_phone,
