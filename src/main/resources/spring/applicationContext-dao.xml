@@ -25,6 +25,7 @@
         <property name="checkoutTimeout" value="1000"/>
         <!--当获取连接失败时的重试次数-->
     </bean>
+
     <!--配置sqlSessionFactory对象-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--注入数据库连接池-->

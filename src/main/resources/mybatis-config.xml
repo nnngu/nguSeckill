@@ -5,7 +5,7 @@
 <configuration>
     <!--首先配置全局属性-->
     <settings>
-        <!--开启自动填充主键功能，原理时通过jdbc的一个方法getGeneratekeys获取自增主键值-->
+        <!--开启自动填充主键功能，原理是通过jdbc的一个方法getGeneratekeys获取自增主键值-->
         <setting name="useGeneratedKeys" value="true"/>
         <!--使用别名替换列名，默认就是开启的-->
         <setting name="useColumnLabel" value="true"/>

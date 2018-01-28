@@ -13,7 +13,7 @@ public class Seckill implements Serializable {
     private long seckillId;
     /*  秒杀商品名字 */
     private String name;
-    /* 秒杀的商品编号 */
+    /* 商品数量 */
     private int number;
     /* 开始秒杀的时间 */
     private LocalDateTime startTime;
@@ -87,7 +87,7 @@ public class Seckill implements Serializable {
         return "com.nnngu.entity.Seckill{" +
                 "主键ID=" + seckillId +
                 ", 秒杀商品='" + name + '\'' +
-                ", 编号=" + number +
+                ", 商品数量=" + number +
                 ", 开始秒杀时间=" + startTime +
                 ", 结束秒杀时间=" + endTime +
                 ", 创建时间=" + createTIme +
