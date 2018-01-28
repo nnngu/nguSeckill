@@ -1,6 +1,6 @@
 /**
  *  模块化javaScript
- * Created by jianrongsun on 17-5-25.
+ * Created by nnngu
  */
 var seckill = {
     // 封装秒杀相关的ajax的url
