@@ -20,7 +20,7 @@ public class Seckill implements Serializable {
     /* 结束秒杀的时间 */
     private Date endTime;
     /* 创建的时间 */
-    private Date createTIme;
+    private Date createTime;
 
     public Seckill() {
     }
@@ -31,7 +31,7 @@ public class Seckill implements Serializable {
         this.number = number;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.createTIme = createTIme;
+        this.createTime = createTIme;
     }
 
     public long getSeckillId() {
@@ -74,12 +74,12 @@ public class Seckill implements Serializable {
         this.endTime = endTime;
     }
 
-    public Date getCreateTIme() {
-        return createTIme;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreateTIme(Date createTIme) {
-        this.createTIme = createTIme;
+    public void setCreateTime(Date createTIme) {
+        this.createTime = createTime;
     }
 
     @Override
@@ -90,7 +90,7 @@ public class Seckill implements Serializable {
                 ", 商品数量=" + number +
                 ", 开始秒杀时间=" + startTime +
                 ", 结束秒杀时间=" + endTime +
-                ", 创建时间=" + createTIme +
+                ", 创建时间=" + createTime +
                 "}\n";
     }
 }
