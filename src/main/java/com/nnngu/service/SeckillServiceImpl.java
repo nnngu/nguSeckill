@@ -7,6 +7,7 @@ import com.nnngu.dto.Exposer;
 import com.nnngu.dto.SeckillExecution;
 import com.nnngu.entity.Seckill;
 import com.nnngu.entity.SuccessKilled;
+import com.nnngu.enums.SeckillStatEnum;
 import com.nnngu.exception.RepeatKillException;
 import com.nnngu.exception.SeckillCloseException;
 import com.nnngu.exception.SeckillException;
@@ -146,7 +147,7 @@ public class SeckillServiceImpl implements SeckillService {
                 } else {
                     // 秒杀成功了,返回那条插入成功秒杀的信息
                     SuccessKilled successKilled = successKilledMapper.queryByIdWithSeckill(seckillId, userPhone);
-                    return new SeckillExecution(seckillId, SUCCESS, successKilled);
+                    return new SeckillExecution(seckillId, SeckillStatEnum.SUCCESS, successKilled);
                 }
             }
         } catch (SeckillCloseException | RepeatKillException e1) {
