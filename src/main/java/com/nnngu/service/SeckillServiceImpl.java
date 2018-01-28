@@ -93,14 +93,6 @@ public class SeckillServiceImpl implements SeckillService {
         Date endTime = seckill.getEndTime();
         Date nowTime = new Date();
         //   开始时间大于现在的时候说明没有开始秒杀活动    秒杀活动结束时间小于现在的时间说明秒杀已经结束了
-       /* if (!nowTime.isAfter(startTime)) {
-            logger.info("现在的时间不在开始时间后面,未开启秒杀");
-            return new Exposer(false, seckillId, nowTime, startTime, endTime);
-        }
-        if (!nowTime.isBefore(endTime)) {
-            logger.info("现在的时间不在结束的时间之前,可以进行秒杀");
-            return new Exposer(false, seckillId, nowTime, startTime, endTime);
-        }*/
         if (nowTime.getTime() > startTime.getTime() && nowTime.getTime() < endTime.getTime()) {
             //秒杀开启,返回秒杀商品的id,用给接口加密的md5
             String md5 = getMd5(seckillId);
