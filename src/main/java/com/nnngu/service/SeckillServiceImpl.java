@@ -117,7 +117,7 @@ public class SeckillServiceImpl implements SeckillService {
     }
 
     /**
-     * 执行秒杀操作,失败的,失败我们就抛出异常
+     * 执行秒杀操作，失败我们就抛出异常
      *
      * @param seckillId 秒杀的商品ID
      * @param userPhone 手机号码

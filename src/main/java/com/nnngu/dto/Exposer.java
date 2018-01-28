@@ -98,6 +98,6 @@ public class Exposer {
                 ", 当前时间=" + now +
                 ", 开始时间=" + start +
                 ", 结束=" + end +
-                '}';
+                "}\n";
     }
 }
