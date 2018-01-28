@@ -41,7 +41,7 @@ public class SeckillMapperTest {
     public void queryAll() throws Exception {
         List<Seckill> seckills = seckillMapper.queryAll(0, 100);
         for (Seckill seckill : seckills) {
-            System.out.println(seckill.toString());
+            System.out.print(seckill.toString());
         }
     }
 

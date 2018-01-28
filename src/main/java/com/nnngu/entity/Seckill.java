@@ -91,6 +91,6 @@ public class Seckill implements Serializable {
                 ", 开始秒杀时间=" + startTime +
                 ", 结束秒杀时间=" + endTime +
                 ", 创建时间=" + createTIme +
-                '}';
+                "}\n";
     }
 }
