@@ -49,7 +49,8 @@
     <!--注入redisDao-->
     <bean id="redisDao" class="com.nnngu.dao.cache.RedisDao">
         <!--构造方法注入值-->
-        <constructor-arg index="0" value="localhost"/>
+        <!--这里的IP地址是我安装了redis的虚拟机的IP地址-->
+        <constructor-arg index="0" value="172.16.157.129"/>
         <constructor-arg index="1" value="6379"/>
     </bean>
 

@@ -1,6 +1,5 @@
 package com.nnngu.dto;
 
-import java.time.LocalDateTime;
 
 /**
  * 暴露秒杀地址接口
@@ -13,11 +12,11 @@ public class Exposer {
     /* id为seckillId的商品秒杀地址   */
     private long seckillId;
     /* 系统当前的时间   */
-    private LocalDateTime now;
+    private long now;
     /* 秒杀开启的时间   */
-    private LocalDateTime start;
+    private long start;
     /*  秒杀结束的时间  */
-    private LocalDateTime end;
+    private long end;
 
     public Exposer() {
     }
@@ -28,7 +27,7 @@ public class Exposer {
         this.seckillId = seckillId;
     }
 
-    public Exposer(boolean exposed, long seckillId, LocalDateTime now, LocalDateTime start, LocalDateTime end) {
+    public Exposer(boolean exposed, long seckillId, long now, long start, long end) {
         this.exposed = exposed;
         this.seckillId = seckillId;
         this.now = now;
@@ -65,27 +64,27 @@ public class Exposer {
         this.seckillId = seckillId;
     }
 
-    public LocalDateTime getNow() {
+    public long getNow() {
         return now;
     }
 
-    public void setNow(LocalDateTime now) {
+    public void setNow(long now) {
         this.now = now;
     }
 
-    public LocalDateTime getStart() {
+    public long getStart() {
         return start;
     }
 
-    public void setStart(LocalDateTime start) {
+    public void setStart(long start) {
         this.start = start;
     }
 
-    public LocalDateTime getEnd() {
+    public long getEnd() {
         return end;
     }
 
-    public void setEnd(LocalDateTime end) {
+    public void setEnd(long end) {
         this.end = end;
     }
 

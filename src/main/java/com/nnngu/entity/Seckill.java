@@ -1,7 +1,7 @@
 package com.nnngu.entity;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 秒杀商品
@@ -16,16 +16,16 @@ public class Seckill implements Serializable {
     /* 商品数量 */
     private int number;
     /* 开始秒杀的时间 */
-    private LocalDateTime startTime;
+    private Date startTime;
     /* 结束秒杀的时间 */
-    private LocalDateTime endTime;
+    private Date endTime;
     /* 创建的时间 */
-    private LocalDateTime createTIme;
+    private Date createTIme;
 
     public Seckill() {
     }
 
-    public Seckill(long seckillId, String name, int number, LocalDateTime startTime, LocalDateTime endTime, LocalDateTime createTIme) {
+    public Seckill(long seckillId, String name, int number, Date startTime, Date endTime, Date createTIme) {
         this.seckillId = seckillId;
         this.name = name;
         this.number = number;
@@ -58,27 +58,27 @@ public class Seckill implements Serializable {
         this.number = number;
     }
 
-    public LocalDateTime getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalDateTime startTime) {
+    public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 
-    public LocalDateTime getEndTime() {
+    public Date getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(LocalDateTime endTime) {
+    public void setEndTime(Date endTime) {
         this.endTime = endTime;
     }
 
-    public LocalDateTime getCreateTIme() {
+    public Date getCreateTIme() {
         return createTIme;
     }
 
-    public void setCreateTIme(LocalDateTime createTIme) {
+    public void setCreateTIme(Date createTIme) {
         this.createTIme = createTIme;
     }
 

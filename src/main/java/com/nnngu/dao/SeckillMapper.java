@@ -3,7 +3,7 @@ package com.nnngu.dao;
 import com.nnngu.entity.Seckill;
 import org.apache.ibatis.annotations.Param;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -15,7 +15,7 @@ public interface SeckillMapper {
      * @param killTime  秒杀的精确时间
      * @return 如果秒杀成功就返回1，否则就返回0
      */
-    int reduceNumber(@Param("seckillId") long seckillId, @Param("killTime") LocalDateTime killTime);
+    int reduceNumber(@Param("seckillId") long seckillId, @Param("killTime") Date killTime);
 
     /**
      * 根据传过来的<code>seckillId</code>去查询秒杀商品的详情.

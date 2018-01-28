@@ -55,7 +55,8 @@ public class SeckillServiceImplTest {
         Exposer exposer = seckillService.exportSeckillUrl(seckillId);
         if (exposer.isExposed()) {
             long userPhone = 12222222222L;
-            String md5 = "bf204e2683e7452aa7db1a50b5713bae";
+//            String md5 = "bf204e2683e7452aa7db1a50b5713bae";
+            String md5 = exposer.getMd5();
             try {
                 SeckillExecution seckillExecution = seckillService.executeSeckill(seckillId, userPhone, md5);
                 System.out.println(seckillExecution.toString());
@@ -67,17 +68,17 @@ public class SeckillServiceImplTest {
         }
     }
 
-    @Test
-    public void executeSeckillProcedureTest() {
-        long seckillId = 1001;
-        long phone = 1368011101;
-        Exposer exposer = seckillService.exportSeckillUrl(seckillId);
-        if (exposer.isExposed()) {
-            String md5 = exposer.getMd5();
-            SeckillExecution execution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
-            System.out.println(execution.getStateInfo());
-        }
-    }
+//    @Test
+//    public void executeSeckillProcedureTest() {
+//        long seckillId = 1001;
+//        long phone = 1368011101;
+//        Exposer exposer = seckillService.exportSeckillUrl(seckillId);
+//        if (exposer.isExposed()) {
+//            String md5 = exposer.getMd5();
+//            SeckillExecution execution = seckillService.executeSeckillProcedure(seckillId, phone, md5);
+//            System.out.println(execution.getStateInfo());
+//        }
+//    }
 
 
 }
