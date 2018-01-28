@@ -3,12 +3,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.nnngu.dao.SeckillMapper">
     <resultMap id="BaseResultMap" type="com.nnngu.entity.Seckill">
-        <id property="seckillId" column="seckill_id" javaType="Long" jdbcType="BIGINT"/>
-        <result property="name" column="name" javaType="String" jdbcType="VARCHAR"/>
-        <result property="number" column="number" javaType="Integer" jdbcType="VARCHAR"/>
-        <result property="startTime" column="start_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
-        <result property="endTime" column="end_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
-        <result property="createTIme" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
+        <!--<id property="seckillId" column="seckill_id" javaType="Long" jdbcType="BIGINT"/>-->
+        <!--<result property="name" column="name" javaType="String" jdbcType="VARCHAR"/>-->
+        <!--<result property="number" column="number" javaType="Integer" jdbcType="VARCHAR"/>-->
+        <!--<result property="startTime" column="start_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>-->
+        <!--<result property="endTime" column="end_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>-->
+        <!--<result property="createTIme" column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>-->
     </resultMap>
     <update id="reduceNumber">
         UPDATE seckill
