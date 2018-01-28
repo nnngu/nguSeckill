@@ -17,7 +17,7 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <!--开启基于注解的申明式事物-->
+    <!--开启基于注解的声明式事务-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
 </beans>
