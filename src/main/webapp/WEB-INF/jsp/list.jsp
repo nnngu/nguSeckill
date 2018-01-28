@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <title>秒杀列表</title>
+    <title>秒杀商品列表</title>
     <%@include file="common/head.jsp" %>
 </head>
 <body>
@@ -32,9 +32,15 @@
                     <tr>
                         <td>${sk.name}</td>
                         <td>${sk.number}</td>
-                        <td><tags:localDataTime dateTime="${sk.startTime}"/></td>
-                        <td><tags:localDataTime dateTime="${sk.endTime}"/></td>
-                        <td><tags:localDataTime dateTime="${sk.createTIme}"/></td>
+                        <td>
+                            <fmt:formatDate value="${sk.startTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                        </td>
+                        <td>
+                            <fmt:formatDate value="${sk.endTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                        </td>
+                        <td>
+                            <fmt:formatDate value="${sk.createTime}" pattern="yyyy-MM-dd HH:mm:ss" />
+                        </td>
                         <td><a class="btn btn-info" href="/seckill/${sk.seckillId}/detail" target="_blank">详情</a></td>
                     </tr>
                 </c:forEach>
@@ -44,6 +50,7 @@
     </div>
 </div>
 </body>
+
 <script src="${pageContext.request.contextPath}/resources/plugins/jquery.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/bootstrap-3.3.0/js/bootstrap.min.js"></script>
 </html>
