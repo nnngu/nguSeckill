@@ -17,6 +17,7 @@ public class SuccessKilled implements Serializable {
     private short state;
     /* 创建时间*/
     private LocalDateTime createTime;
+
     /* 多对一，因为一件商品在库存中肯定有许多，对应的购买信息也有很多*/
     private Seckill seckill;
 
@@ -79,6 +80,6 @@ public class SuccessKilled implements Serializable {
                 ", 秒杀状态=" + state +
                 ", 创建时间=" + createTime +
                 ", 秒杀的商品=" + seckill +
-                '}';
+                "}\n";
     }
 }
