@@ -13,13 +13,16 @@
         </div>
         <div class="panel-body">
             <h2 class="text-danger">
+                <%--显示time图标--%>
                 <span class="glyphicon glyphicon-time"></span>
+                    <%--展示倒计时--%>
                 <span class="glyphicon" id="seckill-box"></span>
             </h2>
         </div>
     </div>
 </div>
 
+<%--登录弹出层 输入电话--%>
 <div id="killPhoneModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -39,6 +42,7 @@
         </div>
 
         <div class="modal-footer">
+            <%--验证信息--%>
             <span id="killPhoneMessage" class="glyphicon"></span>
             <button type="button" id="killPhoneBtn" class="btn btn-success">
                 <span class="glyphicon glyphicon-phone"></span>
@@ -48,23 +52,26 @@
     </div>
 </div>
 </body>
+
 <script src="${pageContext.request.contextPath}/resources/plugins/jquery.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/bootstrap-3.3.0/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/jquery.cookie.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/jquery.countdown.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/script/seckill.js"></script>
+
 <script type="text/javascript">
     $(function () {
-        var startTimeVal = "${seckill.startTime.toLocalDate()} " + seckill.cloneZero("${seckill.startTime.toLocalTime()}");
-        var endTimeVal = "${seckill.endTime.toLocalDate()} " + seckill.cloneZero("${seckill.endTime.toLocalTime()}");
-        console.log("startTimeVal========" + startTimeVal);
-        console.log("endTimeVal========" + endTimeVal);
-        // 传入参数
+        <%--var startTimeVal = "${seckill.startTime.toLocalDate()} " + seckill.cloneZero("${seckill.startTime.toLocalTime()}");--%>
+        <%--var endTimeVal = "${seckill.endTime.toLocalDate()} " + seckill.cloneZero("${seckill.endTime.toLocalTime()}");--%>
+        <%--console.log("startTimeVal========" + startTimeVal);--%>
+        <%--console.log("endTimeVal========" + endTimeVal);--%>
+
+        // 使用EL表达式传入参数
         seckill.detail.init({
             seckillId:${seckill.seckillId},
-            startTime: startTimeVal,
-            endTime: endTimeVal
-        })
+            startTime:${seckill.startTime.time},//毫秒
+            endTime:${seckill.endTime.time}
+        });
     })
 </script>
 
