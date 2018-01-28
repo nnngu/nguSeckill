@@ -34,7 +34,7 @@ public class SeckillMapperTest {
     public void queryById() throws Exception {
         long seckillId = 1000;
         Seckill seckill = seckillMapper.queryById(seckillId);
-        System.out.println(seckill.toString());
+        System.out.print(seckill.toString());
     }
 
     @Test

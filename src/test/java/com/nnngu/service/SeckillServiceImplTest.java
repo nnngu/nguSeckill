@@ -39,7 +39,7 @@ public class SeckillServiceImplTest {
     public void getById() throws Exception {
         long seckillId = 1000;
         Seckill byId = seckillService.getById(seckillId);
-        System.out.println(byId.toString());
+        System.out.print(byId.toString());
     }
 
     @Test
