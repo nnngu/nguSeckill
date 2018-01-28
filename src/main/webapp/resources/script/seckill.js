@@ -17,14 +17,19 @@ var seckill = {
     },
     // 验证手机号码
     validatePhone: function (phone) {
-        return !!(phone && phone.length === 11 && !isNaN(phone));
+        if (phone && phone.length == 11 && !isNaN(phone)) {
+            return true;//直接判断对象会看对象是否为空,空就是undefine就是false; isNaN 非数字返回true
+        } else {
+            return false;
+        }
     },
+
     // 详情页秒杀业务逻辑
     detail: {
         // 详情页开始初始化
         init: function (params) {
             console.log("获取手机号码");
-            // 手机号验证登录，计时交互
+            // 在cookie中查找手机号
             var userPhone = $.cookie('userPhone');
             // 验证手机号
             if (!seckill.validatePhone(userPhone)) {
@@ -42,13 +47,13 @@ var seckill = {
                     var inputPhone = $("#killPhoneKey").val();
                     console.log("inputPhone" + inputPhone);
                     if (seckill.validatePhone(inputPhone)) {
-                        // 把电话写入cookie
+                        // 把电话写入cookie (7天过期)
                         $.cookie('userPhone', inputPhone, {expires: 7, path: '/seckill'});
                         // 验证通过 刷新页面
                         window.location.reload();
                     } else {
                         // todo 错误文案信息写到前端
-                        $("#killPhoneMessage").hide().html("<label class='label label-danger'>手机号码错误</label>").show(300);
+                        $("#killPhoneMessage").hide().html("<label class='label label-danger'>手机号码错误！</label>").show(300);
                     }
                 });
             } else {
