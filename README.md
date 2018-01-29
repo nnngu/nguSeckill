@@ -39,12 +39,19 @@ Github：https://github.com/nnngu
 ## 项目的效果图
 
 ### 秒杀商品列表
+
 ![秒杀商品列表][1]
 
+### 秒杀未开始（此时正在倒计时）
+
+![秒杀未开始（此时正在倒计时）][26]
+
 ### 开始秒杀提示界面
+
 ![开始秒杀提示界面][2]
 
 ### 秒杀结束提示界面
+
 ![秒杀结束提示界面][3]
 
 ## 新建一个Maven项目
@@ -360,4 +367,5 @@ public interface SuccessKilledMapper {
   [23]: https://www.github.com/nnngu/FigureBed/raw/master/2018/1/28/1517076548761.jpg
   [24]: https://www.github.com/nnngu/FigureBed/raw/master/2018/1/28/1517076812755.jpg
   [25]: https://www.github.com/nnngu/FigureBed/raw/master/2018/1/28/1517077063824.jpg
+  [26]: https://www.github.com/nnngu/FigureBed/raw/master/2018/1/30/1517268720971.jpg
 
