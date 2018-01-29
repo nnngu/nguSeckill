@@ -1,11 +1,11 @@
 # 整合IDEA+Maven+SSM框架的高并发的商品秒杀项目
 
-![Mac OS X 10.12.4](https://img.shields.io/badge/Mac%20OS%20X-10.12.4-lightgrey.svg)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2017.2.6-red.svg)
-![Maven](https://img.shields.io/badge/maven-4.0-ff69b4.svg)
-![SSM](https://img.shields.io/badge/SSM-use-brightgreen.svg)
-![build](https://img.shields.io/travis/rust-lang/rust.svg)
-![MIT](https://img.shields.io/dub/l/vibe-d.svg)
+![Mac OS X 10.12.4](https://img.shields.io/badge/Mac%20OS%20X-10.12.4-lightgrey.svg) 
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2017.2.6-red.svg) 
+![Maven](https://img.shields.io/badge/maven-4.0-ff69b4.svg) 
+![SSM](https://img.shields.io/badge/SSM-use-brightgreen.svg) 
+![build](https://img.shields.io/travis/rust-lang/rust.svg) 
+[![MIT](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/nnngu/nguSeckill/blob/master/LICENSE) 
 
 ## 快速部署
 
@@ -28,6 +28,4 @@
 * [03 Java高并发秒杀项目之web层](https://github.com/nnngu/LearningNotes/blob/master/nguSeckill/03%20Java%E9%AB%98%E5%B9%B6%E5%8F%91%E7%A7%92%E6%9D%80%E9%A1%B9%E7%9B%AE%E4%B9%8Bweb%E5%B1%82.md)
 * [04 Java高并发秒杀项目之高并发优化](https://github.com/nnngu/LearningNotes/blob/master/nguSeckill/04%20Java%E9%AB%98%E5%B9%B6%E5%8F%91%E7%A7%92%E6%9D%80%E9%A1%B9%E7%9B%AE%E4%B9%8B%E9%AB%98%E5%B9%B6%E5%8F%91%E4%BC%98%E5%8C%96.md)
 
-## License
 
-[MIT License](https://raw.githubusercontent.com/nnngu/nguSeckill/master/LICENSE)
