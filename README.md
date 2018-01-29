@@ -1,5 +1,7 @@
 # 整合IDEA+Maven+SSM框架的高并发的商品秒杀项目
 
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
+
 ## 快速部署
 
 1、clone项目到本地
