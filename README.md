@@ -1,6 +1,11 @@
 # 整合IDEA+Maven+SSM框架的高并发的商品秒杀项目
 
-![Travis](https://img.shields.io/travis/rust-lang/rust.svg)
+![Mac OS X 10.12.4](https://img.shields.io/badge/Mac%20OS%20X-10.12.4-lightgrey.svg)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-2017.2.6-red.svg)
+![Maven](https://img.shields.io/badge/maven-4.0-ff69b4.svg)
+![SSM](https://img.shields.io/badge/SSM-use-brightgreen.svg)
+![build](https://img.shields.io/travis/rust-lang/rust.svg)
+![MIT](https://img.shields.io/dub/l/vibe-d.svg)
 
 ## 快速部署
 
