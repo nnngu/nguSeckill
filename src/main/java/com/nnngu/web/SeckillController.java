@@ -50,7 +50,7 @@ public class SeckillController {
         return "detail";
     }
 
-    //ajax ,json暴露秒杀接口的方法
+    //ajax，json暴露秒杀接口的方法
     @RequestMapping(value = "/{seckillId}/exposer",
             method = RequestMethod.GET,
             produces = {"application/json;charset=UTF-8"})

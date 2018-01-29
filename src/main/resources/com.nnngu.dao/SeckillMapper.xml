@@ -37,7 +37,7 @@
     <select id="queryAll" resultMap="BaseResultMap">
         SELECT *
         FROM seckill AS s
-        ORDER BY create_time DESC
+        ORDER BY seckill_id ASC
         LIMIT #{offset}, #{limit}
     </select>
 

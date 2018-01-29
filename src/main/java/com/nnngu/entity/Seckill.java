@@ -78,7 +78,7 @@ public class Seckill implements Serializable {
         return createTime;
     }
 
-    public void setCreateTime(Date createTIme) {
+    public void setCreateTime(Date createTime) {
         this.createTime = createTime;
     }
 
