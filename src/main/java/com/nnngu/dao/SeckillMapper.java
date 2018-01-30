@@ -35,8 +35,9 @@ public interface SeckillMapper {
     List<Seckill> queryAll(@Param("offset") int offset, @Param("limit") int limit);
 
     /**
-     *  使用储存过程执行秒杀
+     * 使用储存过程执行秒杀
+     *
      * @param paramMap
      */
-//    void killByProcedure(Map<String,Object> paramMap);
+    void killByProcedure(Map<String, Object> paramMap);
 }
