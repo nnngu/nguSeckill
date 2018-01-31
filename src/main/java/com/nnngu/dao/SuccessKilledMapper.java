@@ -10,7 +10,7 @@ public interface SuccessKilledMapper {
      * @param seckillId 秒杀商品的ID
      * @param userPhone 购买用户的手机号码
      * @return 成功插入就返回1, 否则就返回0
-     */
+     */ 
     int insertSuccessKilled(@Param("seckillId") long seckillId, @Param("userPhone") long userPhone);
 
     /**
