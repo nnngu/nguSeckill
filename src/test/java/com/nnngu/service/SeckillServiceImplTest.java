@@ -16,23 +16,22 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
-
 /**
  * Created by nnngu
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath:spring/applicationContext-dao.xml", "classpath:spring/applicationContext-service.xml"})
 public class SeckillServiceImplTest {
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
+    private Logger logger = LoggerFactory.getLogger(this.getClass()); 
 
     @Autowired
-    private SeckillService seckillService;
+    private SeckillService seckillService; 
 
     @Test
     public void getSeckillList() throws Exception {
-        List<Seckill> seckillList = seckillService.getSeckillList();
+        List<Seckill> seckillList = seckillService.getSeckillList(); 
 //        logger.info(seckillList.toString());
-        System.out.println(seckillList.toString());
+        System.out.println(seckillList.toString()); 
     }
 
     @Test
@@ -44,7 +43,7 @@ public class SeckillServiceImplTest {
 
     @Test
     public void exportSeckillUrl() throws Exception {
-        long seckillId = 1000;
+        long seckillId = 1000; 
         Exposer exposer = seckillService.exportSeckillUrl(seckillId);
         System.out.println(exposer.toString());
     }
